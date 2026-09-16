@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Recommendation - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <nav class="navbar">
+    <div class="logo">🌍 TravelRec</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search beaches, temples, countries..." />
+      <button id="searchBtn" onclick="searchRecommendation()">Search</button>
+      <button id="clearBtn" onclick="clearResults()">Clear</button>
+    </div>
+  </nav>
+
+  <!-- ===== HOME INTRODUCTION ===== -->
+  <header class="hero">
+    <h1>Welcome to Travel Recommendation</h1>
+    <p>
+      Discover the world's most beautiful beaches, sacred temples, and amazing countries.
+      Use the search bar above to find your next destination — try typing
+      <strong>"beach"</strong>, <strong>"temple"</strong>, or <strong>"country"</strong>.
+    </p>
+  </header>
+
+  <!-- ===== SEARCH RESULTS SECTION ===== -->
+  <section id="results" class="results-section">
+    <h2 id="resultsTitle" style="display:none;">Search Results</h2>
+    <div id="resultsContainer" class="results-grid"></div>
+  </section>
+
+  <!-- ===== DEFAULT RECOMMENDATIONS ===== -->
+  <section class="default-section">
+    <h2>Popular Recommendations</h2>
+    <div class="results-grid">
+      <div class="card">
+        <img src="images/beach1.jpg" alt="Beach 1" />
+        <h3>Maldives Beach</h3>
+        <p>Crystal clear waters and white sand beaches.</p>
+      </div>
+      <div class="card">
+        <img src="images/temple1.jpg" alt="Temple 1" />
+        <h3>Golden Temple</h3>
+        <p>A stunning spiritual landmark in India.</p>
+      </div>
+      <div class="card">
+        <img src="images/country1.jpg" alt="Country 1" />
+        <h3>Japan</h3>
+        <p>Land of the rising sun, culture, and technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Travel Recommendation. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
